@@ -20,7 +20,6 @@ Features
 Demo
 ====
 
-YouTube:
 [![Video](http://img.youtube.com/vi/13sC6aDr8bY/0.jpg)](http://www.youtube.com/watch?v=13sC6aDr8bY)
 
 Download
