@@ -1,0 +1,69 @@
+#N canvas 431 153 1920 921 10;
+#X obj -157 257 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -158 313 float;
+#X obj -60 311 + 1;
+#X floatatom -152 367 5 0 0 0 - - -;
+#X obj -158 418 mod 8;
+#X floatatom -95 -139 5 0 0 0 - - -;
+#X obj -92 -104 expr 1000/($f1/60);
+#X floatatom -92 -75 5 0 0 0 - - -;
+#X obj 274 108 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj -127 9 metro;
+#X obj -65 18 metro;
+#X obj 103 132 hradio 20 1 0 8 empty empty empty 0 -8 0 10 -257985
+-1 -1 2;
+#X obj -489 363 mod 8;
+#X obj -393 303 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -328 369 float;
+#X obj -231 370 + 1;
+#X floatatom -296 67 5 0 0 0 - - -;
+#X obj -331 151 metro;
+#X obj -269 160 metro;
+#X obj -262 3 expr $f1/4;
+#X msg -225 234 0;
+#X floatatom -503 284 5 0 0 0 - - -;
+#X obj 104 106 hradio 20 1 0 8 empty empty empty 0 -8 0 10 -257985
+-1 -1 2;
+#X obj 3 79 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj -68 152 table keys;
+#X msg -52 118 \; keys 0 7 0 1 2 3 4 5 6;
+#X obj -247 585 outlet;
+#X obj -77 592 outlet;
+#X obj -347 -73 inlet;
+#X msg 256 207 \; pd dsp \$1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 1;
+#X connect 3 0 4 0;
+#X connect 4 0 22 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 9 1;
+#X connect 7 0 19 0;
+#X connect 8 0 9 0;
+#X connect 8 0 17 0;
+#X connect 8 0 20 0;
+#X connect 8 0 23 0;
+#X connect 8 0 29 0;
+#X connect 9 0 0 0;
+#X connect 11 0 26 0;
+#X connect 12 0 11 0;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 14 0 21 0;
+#X connect 15 0 14 1;
+#X connect 16 0 17 1;
+#X connect 17 0 13 0;
+#X connect 19 0 16 0;
+#X connect 20 0 14 0;
+#X connect 20 0 1 0;
+#X connect 21 0 12 0;
+#X connect 22 0 27 0;
+#X connect 23 0 25 0;
+#X connect 28 0 5 0;
+#X coords 0 -1 1 1 200 60 1 100 100;
