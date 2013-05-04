@@ -26,6 +26,6 @@ YouTube:
 Download
 ========
 
-[latest version](https://github.com/bluszcz/PureDataStepSequencer/archive/master.zip).
+You can find latest version always [here](https://github.com/bluszcz/PureDataStepSequencer/archive/master.zip).
 
 
